@@ -21,7 +21,7 @@ Fonts are separated by a & Color URL: https://coolors.co/d7fff1-aafcb8-8cd790-77
   --paragraph-color-on-white: #77AF9C; /* paragraph text on a white background */ 
   --paragraph-color-on-color: #D7FFF1; /* paragraph text on a colored background */ 
   --paragraph-background-color: #77AF9C  ;
-  --nav-link-color: #77AF9C;
+  --nav-link-color: #D7FFF1;
   --nav-background-color: #8CD790;
   --nav-hover-link-color: #D7FFF1;
   --nav-hover-background-color: #77AF9C;
