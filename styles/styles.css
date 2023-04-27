@@ -15,7 +15,7 @@ img {
     height: auto;
     border: 1px solid #006D77;
     padding: 2px;
-    box-shadow: 0 0 30px #FFDDD2;
+    box-shadow: 0 0 30px #EDF6F9;
 }
 p {
     padding: 10px;
@@ -34,7 +34,7 @@ main img {
 }
 p { padding: 0; }
 footer {
-    margin-top: lem;
-    border-top: 1px solid #000;
+    margin-top: 1em;
+    border-top: 1px solid #FFDDD2;
     text-align: center;
 }
