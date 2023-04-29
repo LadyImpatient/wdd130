@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant:wght@300&family=Poppins:wght@200&display=swap');
+:root {
+    --primary-color: #F5DFBB;
+    --secondary-color: #329F5B;
+    --accent1-color: #F2542D;
+    --accent2-color: #593837;
+    --heading-font: 'Bebas Neue', display;
+    --paragraph-font: 'Poppins', sans-serif;
+    --nav-background-color: #F2542D;
+    --nav-link-color: #F5DFBB;
+    --nav-hover-link-color: #329F5B;
+    --nav-hover-background-color: #F5DFBB;
+}
+body {
+    font-family: var(--paragraph-font);
+    max-width: 960px;
+    padding: 20px;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+header {
+    padding: 20px;
+    background-color: var(--accent1-color);
+}
+p {
+    padding: 25px;
+}
+nav {
+    background-color: var(--nav-background-color);
+    font-size: 1.2rem;
+    display: flex;
+}
+nav a {
+    display: block;
+    color: var(--nav-link-color);
+    text-decoration: none;
+    padding: 1rem;
+}
+nav a:link, nav a:visited {
+    color: var(--nav-link-color);
+}
+nav a:hover {
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
+}
