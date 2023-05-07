@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 nav {
     background-color:#006D77;
     padding: 10px;
@@ -41,4 +46,25 @@ footer {
     margin-top: 1em;
     border-top: 1px solid black;
     text-align: center;
+}
+
+/*Class Selectors*/
+.box {
+    margin: 1rem;
+    border: 1px solid #EDF6F9;
+    padding: 1rem;
+    background-color: #EDF6F9;
+    color: #EDF6F9;
+}
+aside {
+    width: 20em;
+    text-align: center;
+}
+main img {
+    float:right;
+}
+aside h2 {
+    position: relative;
+    top: 47px;
+    left: 150px;
 }
