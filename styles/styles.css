@@ -51,20 +51,25 @@ footer {
 /*Class Selectors*/
 .box {
     margin: 1rem;
-    border: 1px solid #EDF6F9;
+    border: 1px solid #006D77;
     padding: 1rem;
     background-color: #EDF6F9;
-    color: #EDF6F9;
+    color: #006D77;
 }
 aside {
     width: 20em;
     text-align: center;
+    position: relative
 }
 main img {
     float:right;
 }
 aside h2 {
-    position: relative;
-    top: 47px;
-    left: 150px;
+    position: absolute;
+    top: -6px;
+    left: 120px;
+}
+ul {
+    width: 20em;
+    position: relative
 }
