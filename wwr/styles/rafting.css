@@ -44,6 +44,7 @@
   /* Styling the Hero Container */
   .hero {
     position: relative;
+    margin-bottom: 40px;
   }
   
   .hero img {
@@ -58,6 +59,10 @@
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 1;
+    font-family: var(--heading-font);
+    font-size: 48px;
+    color: var(--primary-color);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   }
 
   .social-icon {
@@ -67,15 +72,17 @@
   
   article {
     position: absolute;
-    top: 50%;
+    top: -800%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 1;
     background-color: rgba(255, 255, 255, 0.8);
     padding: 30px;
-    width: 70%; /* Adjust the width as desired */
+    width: 70%;
     display: flex;
     align-items: center;
+    flex-direction: column;
+    text-align: center;
   }
   
   /* Rest of the CSS code */
@@ -108,20 +115,34 @@
   }
 
   header {
-    display: grid;
+    display: flex;
     grid-template-columns: auto 1fr;
+    justify-content: space-between;
     align-items: center;
-    padding: 10px 0;
+    padding: 10px;
+    background-color: var(--nav-background-color)
   }
 
   nav {
     display: flex;
-    justify-content: flex-end;
     gap: 20px;
   }
 
+  nav a {
+    color: var(--nav-link-color);
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+    transition: color 0.3s ease;
+  }
+
+  nav a:hover {
+    color: var(--nav-hover-link-color)
+  }
+
   header img {
-    width: 100px;
+    width: 120px;
+    height: auto;
   }
 
   section {
@@ -163,4 +184,63 @@
     gap: 10px;
   }
 
-  
+/* Styling the Hero Container */
+
+.hero-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: var(--primary-color);
+}
+
+.hero-content p {
+  margin: 10px 0;
+}
+
+/* Styling the History Section */
+section:nth-of-type(1) {
+  background-color: var(--secondary-color);
+  padding: 30px;
+  color: var(--primary-color);
+}
+
+/* Styling the Adventure Section */
+section.adventure-section {
+  background-color: var(--accent1-color);
+  padding: 20px;
+}
+
+section.adventure-section h2 {
+  color: var(--primary-color);
+}
+
+.image-grid {
+  display: flex;
+  justify-content: space-between;
+}
+
+.image-grid img {
+  width: calc(20% - 10px);
+  margin-bottom: 10px;
+}
+
+
+/* Styling the Footer */
+footer {
+  background-color: var(--primary-color);
+  color: var(--accent2-color);
+  font-size: 14px;
+  text-align: center;
+  padding: 20px;
+}
+
+footer p {
+  margin: 0;
+}
+
+.sociallinks {
+  justify-content: center;
+}
