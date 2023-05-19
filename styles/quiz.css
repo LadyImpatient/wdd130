@@ -1,0 +1,76 @@
+/* Style for the quiz container */
+body {
+  font-family: Arial, sans-serif;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 0;
+}
+
+form {
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 5px;
+  width: 100%;
+}
+
+/* Style for the form elements */
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input[type="text"],
+textarea,
+select,
+input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+textarea {
+  height: 80px;
+}
+
+select {
+  height: 40px;
+}
+
+input[type="number"] {
+  width: 100px;
+}
+
+button[type="submit"] {
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+/* Adjustments for the quiz layout */
+form > * {
+  margin-bottom: 20px;
+}
+
+form > *:last-child {
+  margin-bottom: 0;
+}
