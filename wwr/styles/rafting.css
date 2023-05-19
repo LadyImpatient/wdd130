@@ -1,16 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant:wght@300&family=Poppins:wght@200&display=swap');
 
 :root {
-    --primary-color: #F5DFBB;
-    --secondary-color: #329F5B;
-    --accent1-color: #F2542D;
-    --accent2-color: #593837;
+    --primary-color: #f9f9f9;
+    --secondary-color: #322F53;
+    --accent1-color: #322F53;
+    --accent2-color: #322F53;
     --heading-font: 'Bebas Neue', display;
     --paragraph-font: 'Poppins', sans-serif;
-    --nav-background-color: #F2542D;
-    --nav-link-color: #F5DFBB;
-    --nav-hover-link-color: #329F5B;
-    --nav-hover-background-color: #F5DFBB;
+    --nav-background-color: #322F53;
+    --nav-link-color: #f9f9f9;
+    --nav-hover-link-color: #5AA9e6;
+    --nav-hover-background-color: #7FC8F8;
 }
 * {
     margin: 0;
@@ -33,7 +33,7 @@
   
   p {
     font-family: var(--paragraph-font);
-    color: var(--accent2-color);
+    color: var(--primary-color);
   }
   
   /* Removing Underlines from Social Media Links */
@@ -72,11 +72,11 @@
   
   article {
     position: absolute;
-    top: -800%;
+    top: -600%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 1;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: var(--nav-background-color);
     padding: 30px;
     width: 70%;
     display: flex;
@@ -106,6 +106,7 @@
   
   section {
     margin-top: 20px;
+    color: var(--accent2-color)
   }
   
   section img {
@@ -115,7 +116,7 @@
   }
 
   header {
-    display: flex;
+    display: grid;
     grid-template-columns: auto 1fr;
     justify-content: space-between;
     align-items: center;
@@ -125,7 +126,9 @@
 
   nav {
     display: flex;
+    justify-content: flex-end;
     gap: 20px;
+    align-items: center
   }
 
   nav a {
@@ -143,6 +146,7 @@
   header img {
     width: 120px;
     height: auto;
+    grid-column: 1;
   }
 
   section {
@@ -230,7 +234,7 @@ section.adventure-section h2 {
 
 /* Styling the Footer */
 footer {
-  background-color: var(--primary-color);
+  background-color: var(--accent2-color);
   color: var(--accent2-color);
   font-size: 14px;
   text-align: center;
