@@ -215,7 +215,7 @@
   border-radius: 4px;
   transition: background-color 0.3s ease;
   position: absolute; /* Add this line */
-  bottom: -2533px; /* Add this line */
+  bottom: -650px; /* Add this line */
   left: 50%; /* Add this line */
   transform: translateX(-50%);
 }
@@ -232,21 +232,32 @@
 }
 
 .trip-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-gap: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.trip-item {
+  flex-basis: calc(33.33% - 20px);
+  padding: 20px;
+  background-color: #322F53;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.trip-item h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.trip-item p {
+  font-size: 1rem;
 }
 
 .trip {
   padding: 2rem;
   background-color: #322F53;
   border-radius: 4px;
-}
-
-.trip img {
-  width: 100%;
-  border-radius: 4px;
-  margin-bottom: 1rem;
 }
 
 .trip h3 {
@@ -308,12 +319,6 @@ section.adventure-section h2 {
   display: flex;
   justify-content: space-between;
 }
-
-.image-grid img {
-  width: calc(20% - 10px);
-  margin-bottom: 10px;
-}
-
 
 /* Styling the Footer */
 footer {
