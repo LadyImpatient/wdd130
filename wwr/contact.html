@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WWR Contact Us | Alicia Unga-Dinh</title>
-    <meta name="description" content="Alicia Unga-Dinh | WDD130 | WWR Contact Us">
+    <title>Standing Wave Contact Us | Alicia Unga-Dinh</title>
+    <meta name="description" content="Alicia Unga-Dinh | WDD130 | Standing Wave Contact Us">
     <meta name="author" content="Alicia Unga-Dinh">
     <link rel="stylesheet" href="styles/contact.css">
 </head>
@@ -41,36 +41,41 @@
                 Phone Number: 808-123-4567<br>
                 Email: contact@standingwave.com<br>
             </p>
-            
-            <form action="submit.php" method="POST" class="contact-form">
-                <div class="form-group">
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d176755.58321464652!2d-110.706761534345!3d44.42796325873397!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x535d0c9ed63b8859%3A0x57e8e0cc6b7199db!2sYellowstone%20National%20Park%2C%20WY%2082010%2C%20USA!5e0!3m2!1sen!2s!4v1624570574249!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <div class="form-container">
+                <h2> Talk to our team! </h2>
+                <form action="submit.php" method="POST" class="contact-form">
+                  <div class="form-group">
                     <label for="name">Name:</label>
                     <input type="text" id="name" name="name" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">Email:</label>
+                  </div>
+                  <div class="form-group">
+                    <label for="email">Email Address:</label>
                     <input type="email" id="email" name="email" required>
-                </div>
-                <div class="form-group">
-                    <label>Purpose of Message:</label><br>
-                    <input type="radio" id="inquiry" name="purpose" value="General Inquiry" required>
-                    <label for="inquiry">General Inquiry</label><br>
-                    <input type="radio" id="question" name="purpose" value="Reservation Question" required>
-                    <label for="question">Reservation Question</label><br>
-                    <input type="radio" id="suggestion" name="purpose" value="Website Suggestion" required>
-                    <label for="suggestion">Website Suggestion</label><br>
-                </div>
-                <div class="form-group">
+                  </div>
+                  <div class="form-group">
+                    <label for="purpose">Purpose of Message:</label>
+                    <select id="purpose" name="purpose" required>
+                      <option value="">Select</option>
+                      <option value="general">General Inquiry</option>
+                      <option value="reservation">Reservation Question</option>
+                      <option value="suggestion">Website Suggestion</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
                     <label for="message">Message:</label>
-                    <textarea id="message" name="message" required></textarea>
-                </div>
-                <div class="form-group">
-                    <input type="checkbox" id="newsletter" name="newsletter" value="subscribe">
+                    <textarea id="message" name="message" rows="6" required></textarea>
+                  </div>
+                  <div class="form-group">
+                    <input type="checkbox" id="newsletter" name="newsletter">
                     <label for="newsletter">Please subscribe me to the monthly newsletter</label>
-                </div>
-                <input type="submit" value="Submit" class="form-submit">
-            </form>
-        </section>
+                  </div>
+                  <button type="submit" class="submit-button">Submit</button>
+                </form>
+              </div>
+            </section>
     
         <section class="adventure-section">
             <h2>Meet Our Team!</h2>
