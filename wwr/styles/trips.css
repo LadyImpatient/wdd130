@@ -316,8 +316,18 @@ section.adventure-section h2 {
 }
 
 .image-grid {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+}
+
+.trip {
+  text-align: center;
+}
+
+.trip-image {
+  width: 100%;
+  max-width: 100%;
 }
 
 /* Styling the Footer */
