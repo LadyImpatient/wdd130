@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WWR Contact Us | Alicia Unga-Dinh</title>
+    <meta name="description" content="Alicia Unga-Dinh | WDD130 | WWR Contact Us">
+    <meta name="author" content="Alicia Unga-Dinh">
+    <link rel="stylesheet" href="styles/contact.css">
+</head>
+<body>
+    <header>
+        <img src="images/logo.png" alt="Rafting Site Logo">
+        
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+    
+    <main>
+        <div class="hero">
+            <h1>Standing Wave</h1>
+            <div class="hero-content">
+                <article>
+                    <div class="content">
+                        <p>Get ready for an absolutely exhilarating experience.</p>
+                        <img src="images/happy.png" alt="Happy Person" class="happy">
+                    </div>
+                </article>
+            </div>
+            <img src="images/hero.jpeg" alt="Hero Image">
+        </div>
+    
+        <section>
+            <h2>Contact Us</h2>
+            <p>
+                Address: 123 Adventure Way<br>
+                Phone Number: 808-123-4567<br>
+                Email: contact@standingwave.com<br>
+            </p>
+            
+            <form action="submit.php" method="POST" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label>Purpose of Message:</label><br>
+                    <input type="radio" id="inquiry" name="purpose" value="General Inquiry" required>
+                    <label for="inquiry">General Inquiry</label><br>
+                    <input type="radio" id="question" name="purpose" value="Reservation Question" required>
+                    <label for="question">Reservation Question</label><br>
+                    <input type="radio" id="suggestion" name="purpose" value="Website Suggestion" required>
+                    <label for="suggestion">Website Suggestion</label><br>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <div class="form-group">
+                    <input type="checkbox" id="newsletter" name="newsletter" value="subscribe">
+                    <label for="newsletter">Please subscribe me to the monthly newsletter</label>
+                </div>
+                <input type="submit" value="Submit" class="form-submit">
+            </form>
+        </section>
+    
+        <section class="adventure-section">
+            <h2>Meet Our Team!</h2>
+            <div class="image-grid">
+                <img src="images/employee-one.png" alt="Employee One">
+                <img src="images/employee-two.png" alt="Employee Two">
+                <img src="images/employee-three.png" alt="Employee Three">
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>©️2023 ⛰️ Standing Wave ⛰️ Alicia Unga-Dinh </p>
+        
+        <nav class="sociallinks">
+            <a href="https://facebook.com"> 
+                <img src="images/fb.png" alt="Facebook" class="social-icon">
+            </a>
+            <a href="https://www.tiktok.com">
+                <img src="images/tiktok.png" alt="TikTok" class="social-icon">
+            </a>
+            <a href="https://instagram.com">
+                <img src="images/instagram.png" alt="Instagram" class="social-icon">
+            </a>
+        </nav>
+    </footer>
+</body>
+</html>
