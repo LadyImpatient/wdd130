@@ -1,192 +1,186 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant:wght@300&family=Poppins:wght@200&display=swap');
 
 :root {
-    --primary-color: #f9f9f9;
-    --secondary-color: #322F53;
-    --accent1-color: #322F53;
-    --accent2-color: #322F53;
-    --heading-font: 'Bebas Neue', display;
-    --paragraph-font: 'Poppins', sans-serif;
-    --nav-background-color: #322F53;
-    --nav-link-color: #f9f9f9;
-    --nav-hover-link-color: #5AA9e6;
-    --nav-hover-background-color: #7FC8F8;
+  --primary-color: #f9f9f9;
+  --secondary-color: #322F53;
+  --accent1-color: #322F53;
+  --accent2-color: #322F53;
+  --heading-font: 'Bebas Neue', display;
+  --paragraph-font: 'Poppins', sans-serif;
+  --nav-background-color: #322F53;
+  --nav-link-color: #f9f9f9;
+  --nav-hover-link-color: #5AA9e6;
+  --nav-hover-background-color: #7FC8F8;
 }
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 10px;
-  }
-  
-  /* Rest of the CSS code */
-  
-  /* Styling Headings and Paragraphs */
-  h1, h2, h3, h4, h5, h6 {
-    color: var(--primary-color);
-  }
-  
-  p {
-    font-family: var(--paragraph-font);
-    color: var(--primary-color);
-  }
-  
-  /* Removing Underlines from Social Media Links */
-  .sociallinks a {
-    text-decoration: none;
-  }
-  
-  /* Styling the Hero Container */
-  .hero {
-    position: relative;
-    margin-bottom: 40px;
-  }
-  
-  .hero img {
-    width: 100%;
-    display: block;
-    height: auto;
-  }
-  
-  h1 {
-    position: absolute;
-    top: 20%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 1;
-    font-family: var(--heading-font);
-    font-size: 48px;
-    color: var(--primary-color);
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  .social-icon {
-    width: 20px;
-    height: auto;
-  }
-  
-  article {
-    position: absolute;
-    top: -600%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 1;
-    background-color: var(--nav-background-color);
-    padding: 30px;
-    width: 70%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-  }
-  
-  /* Rest of the CSS code */
+body {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 10px;
+}
 
-  
-  article .content {
-    display: flex;
-    align-items: center;
-  }
-  
-  article .content p {
-    margin: 0;
-  }
-  
-  article .content img {
-    width: 150px;
-    height: auto;
-    margin-left: 10px;
-  }
-  
-  
-  section {
-    margin-top: 20px;
-    color: var(--accent2-color)
-  }
-  
-  section img {
-    display: block;
-    width: 100%;
-    margin-bottom: 10px;
-  }
+/* Rest of the CSS code */
 
-  header {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    background-color: var(--nav-background-color)
-  }
+/* Styling Headings and Paragraphs */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--primary-color);
+}
 
-  nav {
-    display: flex;
-    justify-content: flex-end;
-    gap: 20px;
-    align-items: center
-  }
+p {
+  font-family: var(--paragraph-font);
+  color: var(--primary-color);
+}
 
-  nav a {
-    color: var(--nav-link-color);
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: 700;
-    transition: color 0.3s ease;
-  }
+/* Removing Underlines from Social Media Links */
+.sociallinks a {
+  text-decoration: none;
+}
 
-  nav a:hover {
-    color: var(--nav-hover-link-color)
-  }
+/* Styling the Hero Container */
+.hero {
+  position: relative;
+  margin-bottom: 40px;
+}
 
-  header img {
-    width: 120px;
-    height: auto;
-    grid-column: 1;
-  }
+.hero img {
+  width: 100%;
+  display: block;
+  height: auto;
+}
 
-  section {
-    margin-top: 20px;
-    text-align: center;
-  }
+h1 {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  font-family: var(--heading-font);
+  font-size: 48px;
+  color: var(--primary-color);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
 
-  section img {
-    display: block;
-    width: 100%;
-    margin-bottom: 10px;
-  }
+.social-icon {
+  width: 20px;
+  height: auto;
+}
 
-  figure {
-    margin: 0;
-  }
-  
-  figcaption {
-    text-align: center;
-    margin-top: 5px;
-    font-style: italic;
-    color: var(--accent2-color);
-  }
-  
-  /* Styling the Footer */
-  footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    background-color: var(--accent1-color);
-    color: var(--nav-link-color);
-    font-size: 14px;
-  }
+article {
+  position: absolute;
+  top: -600%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  background-color: var(--nav-background-color);
+  padding: 30px;
+  width: 70%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
 
-  .sociallinks {
-    display: flex;
-    justify-content: flex-end;
-    gap: 10px;
-  }
+/* Rest of the CSS code */
+
+
+article .content {
+  display: flex;
+  align-items: center;
+}
+
+article .content p {
+  margin: 0;
+}
+
+article .content img {
+  width: 150px;
+  height: auto;
+  margin-left: 10px;
+}
+
+
+section {
+  margin-top: 20px;
+  color: var(--accent2-color)
+}
+
+section img {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  font-family:var(--paragraph-font)
+}
+
+nav a {
+  color: var(--secondary-color);
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+nav a:hover {
+  color: var(--primary-color);
+  background-color: var(--nav-hover-background-color);
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+header img {
+  width: 120px;
+  height: auto;
+  grid-column: 1;
+}
+
+section {
+  margin-top: 20px;
+  text-align: center;
+}
+
+section img {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+figure {
+  margin: 0;
+}
+
+figcaption {
+  text-align: center;
+  margin-top: 5px;
+  font-style: italic;
+  color: var(--accent2-color);
+}
+
+/* Styling the Footer */
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: var(--accent1-color);
+  color: var(--nav-link-color);
+  font-size: 14px;
+}
+
+.sociallinks {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
 
 /* Styling the Hero Container */
 
