@@ -1,0 +1,417 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant:wght@300&family=Poppins:wght@200&display=swap');
+
+:root {
+    --primary-color: #f9f9f9;
+    --secondary-color: #322F53;
+    --accent1-color: #322F53;
+    --accent2-color: #322F53;
+    --heading-font: 'Bebas Neue', display;
+    --paragraph-font: 'Poppins', sans-serif;
+    --nav-background-color: #322F53;
+    --nav-link-color: #f9f9f9;
+    --nav-hover-link-color: #5AA9e6;
+    --nav-hover-background-color: #7FC8F8;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 10px;
+  }
+  
+  /* Rest of the CSS code */
+  
+  /* Styling Headings and Paragraphs */
+  h1, h2, h3, h4, h5, h6 {
+    color: var(--primary-color);
+  }
+  
+  p {
+    font-family: var(--paragraph-font);
+    color: var(--primary-color);
+  }
+  
+  /* Removing Underlines from Social Media Links */
+  .sociallinks a {
+    text-decoration: none;
+  }
+
+  
+  .hero img {
+    width: 100%;
+    display: block;
+    height: auto;
+  }
+  
+  h1 {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    font-family: var(--heading-font);
+    font-size: 48px;
+    color: var(--primary-color);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+
+  .social-icon {
+    width: 20px;
+    height: auto;
+  }
+  
+  article {
+    position: absolute;
+    top: -600%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    background-color: var(--nav-background-color);
+    padding: 30px;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  /* Rest of the CSS code */
+
+  
+  article .content {
+    display: flex;
+    align-items: center;
+  }
+  
+  article .content p {
+    margin: 0;
+  }
+  
+  article .content img {
+    width: 150px;
+    height: auto;
+    margin-left: 10px;
+  }
+  
+  
+  section {
+    margin-top: 20px;
+    color: var(--accent2-color)
+  }
+  
+  section img {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  header {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: var(--nav-background-color)
+  }
+
+  nav {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    align-items: center
+  }
+
+  nav a {
+    color: var(--nav-link-color);
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+    transition: color 0.3s ease;
+  }
+
+  nav a:hover {
+    color: var(--nav-hover-link-color)
+  }
+
+  header img {
+    width: 120px;
+    height: auto;
+    grid-column: 1;
+  }
+
+  section {
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  section img {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  figure {
+    margin: 0;
+  }
+  
+  figcaption {
+    text-align: center;
+    margin-top: 5px;
+    font-style: italic;
+    color: var(--accent2-color);
+  }
+  
+  /* Styling the Footer */
+  footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: var(--accent1-color);
+    color: var(--nav-link-color);
+    font-size: 14px;
+  }
+
+  .sociallinks {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+  }
+
+/* Styling the Hero Container */
+
+/* Styling the Hero Container */
+.hero {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.hero-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: var(--primary-color);
+}
+
+.hero-content p {
+  margin: 10px 0;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: #5AA9e6;
+  color: #f9f9f9;
+  font-size: 1rem;
+  text-decoration: var(--paragraph-font);
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  position: absolute; /* Add this line */
+  bottom: -2533px; /* Add this line */
+  left: 50%; /* Add this line */
+  transform: translateX(-50%);
+}
+
+.cta-button:hover {
+  background-color: #7FC8F8;
+}
+
+/* Trip Section */
+.trip-section {
+  padding: 4rem 0;
+  text-align: center;
+  position: relative;
+}
+
+.trip-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 2rem;
+}
+
+.trip {
+  padding: 2rem;
+  background-color: #322F53;
+  border-radius: 4px;
+}
+
+.trip img {
+  width: 100%;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+.trip h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.trip p {
+  font-size: 1rem;
+}
+
+/* Trip Table Section */
+.trip-table-section {
+  padding: 4rem 0;
+}
+
+.trip-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.trip-table th {
+  background-color: #322F53;
+  padding: 0.75rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.trip-table td {
+  padding: 0.75rem;
+  border-bottom: 1px solid #ccc;
+}
+
+/* Responsive Styling */
+@media screen and (max-width: 768px) {
+  .trip-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Styling the History Section */
+section:nth-of-type(1) {
+  background-color: var(--secondary-color);
+  padding: 30px;
+  color: var(--primary-color);
+}
+
+/* Styling the Adventure Section */
+section.adventure-section {
+  background-color: var(--accent1-color);
+  padding: 20px;
+}
+
+section.adventure-section h2 {
+  color: var(--primary-color);
+}
+
+.image-grid {
+  display: flex;
+  justify-content: space-between;
+}
+
+.image-grid img {
+  width: calc(20% - 10px);
+  margin-bottom: 10px;
+}
+
+
+/* Styling the Footer */
+footer {
+  background-color: var(--accent2-color);
+  color: var(--accent2-color);
+  font-size: 14px;
+  text-align: center;
+  padding: 20px;
+}
+
+footer p {
+  margin: 0;
+}
+
+.sociallinks {
+  justify-content: center;
+}
+
+
+.form-container {
+  background-color: #322F53;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #5AA9e6;
+}
+
+textarea {
+  resize: vertical;
+}
+
+input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+.submit-button {
+  background-color: #7FC8F8;
+  color: #f9f9f9;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: #5AA9e6;
+}
+
+.submit-button:focus {
+  outline: none;
+}
+
+/* Additional styles for responsiveness */
+@media only screen and (max-width: 768px) {
+  .form-container {
+    padding: 10px;
+  }
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    padding: 6px;
+  }
+  .submit-button {
+    padding: 8px 16px;
+  }
+}
+
+.form-checkbox-group {
+  display: flex;
+  align-items: left;
+}
+
+.checkbox-container {
+  margin-left: 500px;
+}
